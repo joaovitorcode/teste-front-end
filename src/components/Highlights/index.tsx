@@ -15,7 +15,7 @@ export function Highlights() {
         <h2 className="highlights__title">
           As melhores guias para os melhores passeios.
         </h2>
-        <Button style="highlights__button" />
+        <Button style="highlights__button">Confira</Button>
         <button className="highlights__arrow-right">
           <img src={CaretDownImage} alt="" />
         </button>
