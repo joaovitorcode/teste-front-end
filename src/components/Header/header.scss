@@ -2,7 +2,6 @@
 
 .header {
   width: 100%;
-  border-radius: 0px 0px 10px 10px;
 
   .header__top {
     width: 100%;
@@ -88,31 +87,37 @@
   }
 
   .header__bottom {
-    max-width: 1168px;
+    max-width: 1280px;
     margin: 0px auto;
-    padding: 12px 0px;
-    display: flex;
-    justify-content: space-between;
 
-    .header__nav-icons {
-      width: 100%;
+    .header__bottom-container {
+      padding: 12px 56px;
       display: flex;
-      align-items: center;
+      justify-content: space-between;
+      background: white;
+      box-sizing: border-box;
+      border-radius: 0px 0px 10px 10px;
 
-      > ul {
+      .header__nav-link {
         width: 100%;
         display: flex;
         align-items: center;
-        justify-content: space-between;
 
-        > li {
-          text-transform: uppercase;
-          font-size: 12px;
+        > ul {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
 
-          > a {
-            text-decoration: none;
-            color: $gray-1;
-            font-weight: 600;
+          > li {
+            text-transform: uppercase;
+            font-size: 12px;
+
+            > a {
+              text-decoration: none;
+              color: $gray-1;
+              font-weight: 600;
+            }
           }
         }
       }

@@ -8,6 +8,12 @@ import BoxIcon from '../../assets/icons/Box.svg'
 import HeartIcon from '../../assets/icons/Heart.svg'
 import UserCircleIcon from '../../assets/icons/UserCircle.svg'
 import ShoppingCartIcon from '../../assets/icons/ShoppingCart.svg'
+import { links } from './constants'
+
+interface LinkProps {
+  name: string
+  href: string
+}
 
 export function Header() {
   return (
@@ -66,34 +72,17 @@ export function Header() {
         </div>
       </div>
       <div className="header__bottom">
-        <nav className="header__nav-icons">
-          <ul>
-            <li>
-              <a href="#">Brincar</a>
-            </li>
-            <li>
-              <a href="#">Morder</a>
-            </li>
-            <li>
-              <a href="#">Comer</a>
-            </li>
-            <li>
-              <a href="#">Passear</a>
-            </li>
-            <li>
-              <a href="#">Casa e conforto</a>
-            </li>
-            <li>
-              <a href="#">Educação</a>
-            </li>
-            <li>
-              <a href="#">Ofertas</a>
-            </li>
-            <li>
-              <a href="#">Coleção de outono</a>
-            </li>
-          </ul>
-        </nav>
+        <div className="header__bottom-container">
+          <nav className="header__nav-link">
+            <ul>
+              {links.map((link: LinkProps) => (
+                <li key={link.name}>
+                  <a href={link.href}>{link.name}</a>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
   )

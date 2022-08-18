@@ -1,0 +1,16 @@
+@import '../../styles/variables.scss';
+
+.button {
+  padding: 12px 24px;
+  background: $main;
+  color: white;
+  font-weight: 800;
+  border: 1px solid $support;
+  border-radius: 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &:hover {
+    background: $support;
+  }
+}

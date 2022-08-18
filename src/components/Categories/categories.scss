@@ -1,0 +1,66 @@
+@import '../../styles/variables.scss';
+
+.categories {
+  width: 100%;
+  padding-top: 80px;
+
+  .categories__container {
+    max-width: 1280px;
+    margin: 0px auto;
+    padding: 0px 56px;
+    box-sizing: border-box;
+    position: relative;
+
+    .categories__title {
+      font-size: 32px;
+      font-weight: 700;
+      color: $black;
+    }
+
+    .categories__arrow-left {
+      position: absolute;
+      top: 175px;
+      left: 10px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      rotate: 90deg;
+    }
+
+    .categories__list {
+      width: 100%;
+      margin-top: 24px;
+      display: flex;
+      justify-content: space-between;
+
+      .categories__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+
+        .categories__image {
+          width: 277px;
+          height: 277px;
+          border-radius: 20px;
+          object-fit: cover;
+        }
+
+        .categories__description {
+          font-weight: 500;
+          color: $gray-1;
+        }
+      }
+    }
+
+    .categories__arrow-right {
+      position: absolute;
+      top: 175px;
+      right: 10px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      rotate: -90deg;
+    }
+  }
+}

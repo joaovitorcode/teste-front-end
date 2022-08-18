@@ -1,0 +1,79 @@
+.highlights {
+  width: 100%;
+  height: 490px;
+
+  .highlights__container {
+    max-width: 1280px;
+    margin: 0px auto;
+    position: relative;
+
+    .highlights__arrow-left {
+      position: absolute;
+      top: 221px;
+      left: 56px;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    .highlights__title {
+      font-size: 40px;
+      font-weight: 700;
+      color: white;
+      width: 387px;
+      line-height: 60px;
+      position: absolute;
+      top: 119px;
+      left: 144px;
+    }
+
+    .highlights__button {
+      position: absolute;
+      top: 323px;
+      left: 144px;
+    }
+
+    .highlights__arrow-right {
+      position: absolute;
+      top: 221px;
+      right: 56px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      rotate: 180deg;
+    }
+
+    .highlights__switch {
+      position: absolute;
+      left: 606px;
+      top: 438px;
+      display: flex;
+      gap: 16px;
+
+      .highlights__switch-dot {
+        width: 12px;
+        height: 12px;
+        border: 2px solid white;
+        border-radius: 100%;
+        box-sizing: border-box;
+        cursor: pointer;
+      }
+
+      .highlights__switch-dot--active {
+        width: 12px;
+        height: 12px;
+        background: white;
+        border-radius: 100%;
+        box-sizing: border-box;
+        cursor: pointer;
+      }
+    }
+
+    .highlights__arrow-bottom {
+      position: absolute;
+      left: 608px;
+      top: 466px;
+      cursor: pointer;
+    }
+  }
+}
